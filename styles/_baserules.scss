@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+    font-family: $font;
+    background-color: $light-blue-100;
+    font-weight: 400;
+    height: 100vh;
+    padding: 0 16px;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.toast {
+  background-color: $dark-blue-300;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: $white;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  &.error{
+    background-color: red;
+  }
+}
+.toast.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .toast {
+    top: 20px;
+    right: 50%;
+  }
+}

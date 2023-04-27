@@ -1,0 +1,16 @@
+button{
+    background: $dark-blue-300;
+    color: $white;
+    height: 67px;
+    width: 100px;
+    border-radius: 24px;
+}
+
+.button--secondary{
+    background: $light-blue-100;
+    color: $dark-blue-300;
+    border: $dark-blue-300 1px solid;
+    &:hover{
+        background: $light-blue-200;
+    }
+}

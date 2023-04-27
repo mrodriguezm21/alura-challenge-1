@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura challenge - Desafio 1</title>
+    <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="logo">
+            <img src="./src/logo.png" alt="">
+        </div>
+        <div class="main__content">
+            <textarea name="" id="wordToEncript" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="main__handlers__section">
+                <div class="main__important">
+                    <div class="important__img">
+                        <img src="./src/important.png" alt="">
+                    </div>
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="main__handlers__section__buttons">
+                <button id="encripterButton">Encriptar</button>
+                <button id="decripterButton">Desencriptar</button>
+            </div>
+            </div>
+        </div>
+        <aside>
+            <div id="noContentImg" class="noContentImg">
+                <img src="src/muñeco.png" alt="">
+            </div>
+            <div class="swapContent">
+                <div id="defaultContent">
+                    <h2 class="swapContent__title">Ningún mensaje fue encontrado</h2>
+                    <span class="swapContent__text">Ingresa el texto que desees encriptar o desencriptar.</span>
+                </div>
+                <span id="de-encripteWord" class="swapContent__text"></span>
+            </div>
+            <button id="copyButton" class="button--secondary">Copiar</button>
+        </aside>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
